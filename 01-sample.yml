@@ -6,7 +6,7 @@
         msg: Hello from task1 of play1 
 
 - name: play4
-  host: all
+  hosts: all
   tasks:
     - name: Print Hello from Play2
 
