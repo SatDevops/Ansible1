@@ -8,6 +8,9 @@
 - name: play4
   hosts: all
   task: 
-   - name: pp
+    - name: pp
+      ansible.builtin.debug:
+        msg: Hello from task1 of play1
+     
      
 
