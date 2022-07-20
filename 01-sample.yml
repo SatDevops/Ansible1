@@ -6,5 +6,4 @@
         msg: Hello from task1 of play1 
  
 - name: play3 
-  host: all 
-  
+   host: all 
