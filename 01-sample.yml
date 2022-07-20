@@ -7,6 +7,4 @@
 
 - name: play4
   hosts: all
-  tasks:
-    - name: Print Hello from Play2
 
