@@ -7,10 +7,10 @@
 
 - name: play4
   hosts: all
-  task: 
-    - name: pp
+  task:
+    - name: Print Hello from Play2
       ansible.builtin.debug:
-        msg: Hello from task1 of play1
-     
+        msg: Hello from task1 of play1  
+    
      
 
