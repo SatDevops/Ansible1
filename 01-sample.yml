@@ -4,6 +4,15 @@
     - name: Print Hello from Play1 
       ansible.builtin.debug:
         msg: Hello from task1 of play1 
- 
-- name: play3 
-   host:  all 
+
+- name: Play3
+  hosts: all  
+  tasks:  
+    - name: Print Hello from Play2 
+      ansible.builtin.debug:
+        msg: Hello from task1 of play2
+- name: play4
+  host: all
+  tasks:
+    - name: Print Hello from Play2
+
