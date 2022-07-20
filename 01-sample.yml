@@ -1,0 +1,6 @@
+name: play1
+host: all
+task: 
+  -name: print task 
+  -ansible.builtin.debug:
+    masg: Hi this is my first code 
