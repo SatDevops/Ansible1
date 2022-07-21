@@ -1,5 +1,6 @@
-- name: playbook setup for roboshop
-  hosts: frontend
-  roles:
-   - frotend   
+- name: Playbook to setup the roboshop project 
+  hosts: frontend  
+  become: yes
+  roles:  
+    - frotend 
 
