@@ -1,5 +1,5 @@
 - name: Loops 
-  host: all 
+  hosts: all 
   tasks:
    - name: itnration of Loops 
      debug:
