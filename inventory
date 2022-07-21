@@ -1,4 +1,4 @@
-[prod]
-rating-prod.robodevops.internal
+[frontend]
+frontend.robodevops.internal
 [DEV]
 upi.robodevops.internal
