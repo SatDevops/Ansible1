@@ -4,11 +4,11 @@
    URL: play.google.com
   tasks:  
     - name: Print Hello from Play1 
+      vars:
+       URL: task.google.com
       ansible.builtin.debug:
         msg: Hello from task1 {{URL}}
     
     - name: Print Hello from Play2
-      vars:
-       URL: task.google.com
       ansible.builtin.debug:
         msg: Hello from task2 {{URL}}
