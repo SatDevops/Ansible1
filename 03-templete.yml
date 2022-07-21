@@ -1,7 +1,7 @@
-- name: Copy the file source to destination 
+- name: Demo on copying the file to the remote machines with a template 
   hosts: all 
   tasks:
-   - name: Copy the file process 
-     ansible.builtin.template:
-      src: proxyfile.config
-      dest: /home/centos
+    - name: copy a proxy file to remote nodes 
+      ansible.builtin.template:
+        src: proxyfile.config
+        dest: /home/centos 
