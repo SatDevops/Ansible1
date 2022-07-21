@@ -1,0 +1,7 @@
+- name: Copy the file source to destination 
+  hosts: all 
+  tasks:
+   - name: Copy the file process 
+     ansible.builtin.template:
+      src: proxyfile.config
+      dest: /home/centos
