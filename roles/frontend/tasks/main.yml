@@ -15,10 +15,11 @@
     state: absent
 
 
-- name: Copy the file process 
+- name: copy of frontend content to nginx path 
   ansible.builtin.copy:
-      src: /tmp/frontend-main/static
-      dest: /usr/share/nginx/html
+     src: /tmp/frontend-main/static/
+     dest: /usr/share/nginx/html
+     remote_src: yes
 
 
     
