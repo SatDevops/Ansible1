@@ -2,8 +2,14 @@
   ansible.builtin.package:
     name: nginx 
     state: present 
-- name: Unarchive a file that is already on the remote machine
+
+- name: Unarchive a file that  on the remote machine by link 
   ansible.builtin.unarchive:
     src: "https://github.com/stans-robot-project/frontend/archive/main.zip"
     dest: /tmp
     remote_src: yes
+
+- name: Remove file (delete file)
+  ansible.builtin.file:
+    path: /usr/share/nginx/htmlt
+    state: absent
