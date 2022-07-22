@@ -5,5 +5,5 @@
 - name: Unarchive a file that is already on the remote machine
   ansible.builtin.unarchive:
     src: "https://github.com/stans-robot-project/frontend/archive/main.zip"
-    dest: /tmp/frontend.zip
+    dest: /tmp
     remote_src: yes
