@@ -1,5 +1,6 @@
 - name: Playbook to setup the roboshop project 
-  hosts: frontend  
+  hosts: frontend 
+  become: yes  # Runs the whole playbook as a root use
   roles:  
      - frontend 
 
