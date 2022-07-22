@@ -1,3 +1,4 @@
-- name: Print Hello
-  ansible.builtin.debug:
-    msg: Hello from task1 of play1 
+- name: Install nginx
+  ansible.builtin.package:
+    - name: nginx
+      state: present
