@@ -13,3 +13,12 @@
   ansible.builtin.file:
     path: /usr/share/nginx/htmlt
     state: absent
+
+
+- name: Copy the file process 
+  ansible.builtin.copy:
+      src:  /tmp/forntend-main/static 
+      dest: /usr/share/nginx/html
+
+
+    
