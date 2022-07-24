@@ -1,11 +1,11 @@
 - name: Confiring Yum repo 
   ansible.builtin.shell:  curl -sL https://rpm.nodesource.com/setup_lts.x | bash
 
-- name: Install {{COMPONENT}}
+- name: Installing {{COMPONENT}}
   ansible.builtin.package:
-    name:  
-    - nodejs -y
-    - gcc-c++
+    name: 
+      - nodejs
+      - gcc-c++ 
     state: present 
 
 - name: Adding the User 
