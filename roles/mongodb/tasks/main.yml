@@ -19,11 +19,10 @@
     name: mongod
     state: started
     enabled: yes  
-- name: Unarchive a file that  on the remote machine by link 
-  ansible.builtin.unarchive:
-    src: "{{ Repo_URL }}"
-    dest: /tmp
-    remote_src: yes
+- name: Download and extracting {{COMPONENT}}
+  ansible.builtin.include_role:
+    name: common 
+    tasks_from: download 
 
 
 - name: Loading Catalogue and Users Scahme 
