@@ -9,8 +9,9 @@
     state: present 
 
 - name: Adding the User 
-  ansible.builtin.user:
-    name: "{{APPUSER}}"
+  ansible.builtin.include_role:
+    name: "{{ APPUSER }}"
+    tasks_from: create-user
 
 - name: Download and extracting {{COMPONENT}}
   ansible.builtin.include_role:
