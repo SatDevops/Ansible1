@@ -19,9 +19,12 @@
     name: mongod
     state: started
     enabled: yes  
+- name: Unarchive a file that  on the remote machine by link 
+  ansible.builtin.unarchive:
+    src: "{{ Repo_URL }}"
+    dest: /tmp
+    remote_src: yes
 
-- name: Disble auto shutdwon 
-  shell: disable-auto-shutdown && set-hostname {{ COMPONENT }}
 
 - name: Loading Catalogue and Users Scahme 
   community.mongodb.mongodb_shell:
@@ -32,3 +35,7 @@
   community.mongodb.mongodb_shell:
     file: "/tmp/mongodb-main/users.js"
     idempotent: yes
+
+
+- name: Disble auto shutdwon 
+  shell: disable-auto-shutdown && set-hostname {{ COMPONENT }}
