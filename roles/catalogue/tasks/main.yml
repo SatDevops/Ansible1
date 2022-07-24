@@ -1,7 +1,7 @@
 - name: Confiring Yum repo 
   ansible.builtin.shell:  curl -sL https://rpm.nodesource.com/setup_lts.x | bash
 
-- name: Install nginx
+- name: Install {{COMPONENT}}
   ansible.builtin.package:
     name:  
     - nodejs -y
