@@ -1,6 +1,6 @@
 - name: Playbook to setup the roboshop project 
-  hosts: {{COMPONENT}} 
+  hosts: {{COMPONENT}}  
   become: yes  # Runs the whole playbook as a root use
   roles:  
-     - {{COMPONENT}}
+     - {{COMPONENT}} 
 
