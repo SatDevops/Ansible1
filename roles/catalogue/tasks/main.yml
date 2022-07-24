@@ -8,9 +8,9 @@
     - gcc-c++
     state: present 
 
-- name: Install nginx
+- name: Adding the User 
   ansible.builtin.user:
-    name: "{{ APPUSER }}"
+    name: "{{APPUSER}}"
 
 - name: Download and extracting {{COMPONENT}}
   ansible.builtin.include_role:
