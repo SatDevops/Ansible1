@@ -1,6 +1,6 @@
 - name: Playbook to setup the roboshop project 
-  hosts: mogodb 
+  hosts: {{COMPONENT}} 
   become: yes  # Runs the whole playbook as a root use
   roles:  
-     - mongodb
+     - {{COMPONENT}}
 
