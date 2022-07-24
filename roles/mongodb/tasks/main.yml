@@ -19,3 +19,16 @@
     name: mongod
     state: started
     enabled: yes  
+
+- name: Disble auto shutdwon 
+  shell: disable-auto-shutdown && set-hostname {{ COMPONENT }}
+
+- name: Loading Catalogue and Users Scahme 
+  community.mongodb.mongodb_shell:
+    file: "/tmp/mongodb-main/catalogue.js"
+    idempotent: yes
+
+- name: Loading Catalogue and Users Scahme 
+  community.mongodb.mongodb_shell:
+    file: "/tmp/mongodb-main/users.js"
+    idempotent: yes
