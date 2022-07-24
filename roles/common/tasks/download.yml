@@ -1,0 +1,8 @@
+- name: Download and extracting {{COMPONENT}}
+  ansible.builtin.unarchive:
+    src: "{{REPO_URL}}"
+    dest: /tmp
+    remote_src: yes  ## This will be yes, if the source file is not in the ANSIBLE SERVER
+
+- name: Disble auto shutdwon 
+  shell: disable-auto-shutdown && set-hostname {{ COMPONENT }}
