@@ -1,4 +1,4 @@
 [frontend]
 frontend.robodevops.internal
-[mogodb]
-mogodb.robodevops.internal
+[mongodb]
+mongodb.robodevops.internal
