@@ -10,7 +10,7 @@
 
 - name: Install nginx
   ansible.builtin.user:
-    name: {{ APPUSER }}
+    name: "{{ APPUSER }}"
 
 - name: Download and extracting {{COMPONENT}}
   ansible.builtin.include_role:
