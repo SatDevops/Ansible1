@@ -8,9 +8,9 @@
       - gcc-c++ 
     state: present 
 
-- name: Adding the User 
+- name: Adding the User {{COMPONENT}}
   ansible.builtin.include_role:
-    name: "{{ APPUSER }}"
+    name: common
     tasks_from: create-user
 
 - name: Download and extracting {{COMPONENT}}
