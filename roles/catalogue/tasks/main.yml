@@ -2,13 +2,3 @@
   ansible.builtin.include_role:
     name: common 
     tasks_from: nodejs
-
-- name: Cleanup of {{COMPONENT}}
-  ansible.builtin.file:
-    path: /home/{{APPUSER}}/{{COMPONENT}}
-    state: absent
-
-- name: Cleanup of {{COMPONENT}}
-  ansible.builtin.file:
-    path: /home/{{APPUSER}}/{{COMPONENT}}
-    state: absent

@@ -34,5 +34,3 @@
     - users
 
 
-- name: Disble auto shutdwon 
-  shell: disable-auto-shutdown && set-hostname {{ COMPONENT }}
