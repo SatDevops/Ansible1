@@ -4,3 +4,5 @@ frontend.robodevops.internal
 mongodb.robodevops.internal
 [catalogue]
 catalogue.robodevops.internal
+[redis]
+redis.robodevops.internal
