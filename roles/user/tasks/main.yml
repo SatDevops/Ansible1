@@ -1,4 +1,4 @@
 - name: Configuring NodeJS 
   ansible.builtin.include_role:
     name: common 
-    tasks_from: nodejss
+    tasks_from: nodejs
