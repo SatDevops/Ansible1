@@ -6,3 +6,5 @@ mongodb.robodevops.internal
 catalogue.robodevops.internal
 [redis]
 redis.robodevops.internal
+[user]
+user.robodevops.internal
