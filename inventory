@@ -1,5 +1,5 @@
 [frontend]
-frontend.robodevops.internal
+frontend-dev.robodevops.internal
 [mongodb]
 mongodb.robodevops.internal
 [catalogue]
