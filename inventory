@@ -1,10 +1,10 @@
 [frontend-dev]
 frontend-dev.robodevops.internal
 [mongodb-dev]
-mongodb.robodevops.internal
+mongodb-dev.robodevops.internal
 [catalogue-dev]
-catalogue.robodevops.internal
+catalogue-dev.robodevops.internal
 [redis-dev]
-redis.robodevops.internal
+redis-dev.robodevops.internal
 [user-dev]
-user.robodevops.internal
+user-dev.robodevops.internal
