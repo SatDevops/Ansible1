@@ -21,9 +21,10 @@
      remote_src: yes
      
 - name: copy the proxy file 
-  ansible.builtin.copy:
+  ansible.builtin.template:
      src: roboshop.conf
      dest: /etc/nginx/default.d/roboshop.conf
+  notify: Restart-Nginx 
 
 - name: Start Nginx  
   ansible.builtin.service:
