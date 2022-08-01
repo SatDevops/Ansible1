@@ -8,3 +8,5 @@ catalogue-dev.robodevops.internal
 redis-dev.robodevops.internal
 [user-dev]
 user-dev.robodevops.internal
+[Cart-dev]
+Cart-dev.robodevops.internal
