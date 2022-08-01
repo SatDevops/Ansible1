@@ -10,3 +10,5 @@ redis-dev.robodevops.internal
 user-dev.robodevops.internal
 [cart-dev]
 cart-dev.robodevops.internal
+[mysql-dev]
+mysql-dev.robodevops.internal
