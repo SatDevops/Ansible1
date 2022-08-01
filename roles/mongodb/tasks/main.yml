@@ -32,6 +32,8 @@
   loop: 
     - catalogue 
     - users
-
+  
+- name: Disabling auto shutdown 
+  shell: disable-auto-shutdown && set-hostname {{COMPONENT}}
 
 
