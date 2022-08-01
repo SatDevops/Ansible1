@@ -3,7 +3,7 @@ frontend-dev.robodevops.internal
 [mongodb-dev]
 mongodb-dev.robodevops.internal
 [catalogue-dev]
-catalouge-dev.robodevops.internal
+catalogue-dev.robodevops.internal
 [redis-dev]
 redis-dev.robodevops.internal
 [user-dev]
