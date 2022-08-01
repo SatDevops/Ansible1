@@ -1,17 +1,12 @@
 [frontend-dev]
 frontend-dev.robodevops.internal
-
 [mongodb-dev]
 mongodb-dev.robodevops.internal
-
 [catalogue-dev]
 catalogue-dev.robodevops.internal
-
 [redis-dev]
 redis-dev.robodevops.internal
-
 [user-dev]
 user-dev.robodevops.internal
-
 [cart-dev]
 cart-dev.robodevops.internal
