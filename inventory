@@ -14,3 +14,5 @@ cart-dev.robodevops.internal
 mysql-dev.robodevops.internal
 [shipping-dev]
 shipping-dev.robodevops.internal
+[rabbitmq-dev]
+rabbitmq-dev.robodevops.internal
