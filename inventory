@@ -16,3 +16,5 @@ mysql-dev.robodevops.internal
 shipping-dev.robodevops.internal
 [rabbitmq-dev]
 rabbitmq-dev.robodevops.internal
+[payment-dev]
+payment-dev.robodevops.internal
