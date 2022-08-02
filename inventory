@@ -12,3 +12,5 @@ user-dev.robodevops.internal
 cart-dev.robodevops.internal
 [mysql-dev]
 mysql-dev.robodevops.internal
+[shipping-dev]
+shipping-dev.robodevops.internal
