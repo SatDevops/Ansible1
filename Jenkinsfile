@@ -1,6 +1,5 @@
 pipeline {
     agent any 
-  
     stages {
      stage('Do a dry-run') {        // This will be executed only when you raise a PR
               steps {
