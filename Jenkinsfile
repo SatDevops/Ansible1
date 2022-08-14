@@ -8,6 +8,7 @@ pipeline {
         SSH_CRED = credentials('SSH-Cenos7')
         GIT = credentials('GitHub-Token')
     }
+    stages {
      stage('Do a dry-run') {        // This will be executed only when you raise a PR
               steps {
                 sh "env"   // Just to see tne environment variables as a part of the pipeline
@@ -15,4 +16,5 @@ pipeline {
             }
         }
 
+}
 }
