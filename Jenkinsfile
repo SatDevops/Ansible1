@@ -1,5 +1,9 @@
 pipeline {
     agent any 
+    parameters {
+         choice(name: 'ENV', choices: ['dev', 'prod'], description: 'Chose the environment')
+         string(name: 'COMPONENT', defaultValue: 'mongodb', description: 'Enter the name of the component')
+    }
     stages {
      stage('Do a dry-run') {        // This will be executed only when you raise a PR
               steps {
