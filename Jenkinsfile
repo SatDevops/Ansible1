@@ -15,6 +15,8 @@ pipeline {
                 sh "echo Style Checks"
                 sh "echo running is feature branch"
     }
+
+    }
 //     stages {
 //      stage('Do a dry-run') {        // This will be executed only when you raise a PR
 //               steps {
@@ -34,3 +36,4 @@ stage('Tagging') {
             }
 }
 }
+
