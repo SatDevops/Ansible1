@@ -8,6 +8,7 @@ pipeline {
         SSH_CRED = credentials('SSH-Centos7')
        // GIT = credentials('GitHub-Token')
     }
+    stages {
     stage('Lint Checks') {  // This will be executed against the feature branch only
             when { branch pattern: "feature-.*", comparator: "REGEXP"}
             steps {
@@ -35,5 +36,6 @@ stage('Tagging') {
                  sh "echo  run only tag pramote"
             }
 }
+ }
 }
 
