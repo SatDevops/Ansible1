@@ -36,5 +36,11 @@ stage('Tagging') {
                  sh "echo  run only tag pramote"
             }
 }
- }
+
+
+    }
 }
+
+
+
+
