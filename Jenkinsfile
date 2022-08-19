@@ -6,7 +6,7 @@ pipeline {
     }
       environment { 
         SSH_CRED = credentials('SSH-Centos7')
-       // GIT = credentials('GitHub-Token')
+        GIT = credentials('GitHub-Token')
     }
     stages {
     stage('Lint Checks') {  // This will be executed against the feature branch only
@@ -18,15 +18,15 @@ pipeline {
     }
 
     }
-//     stages {
-//      stage('Do a dry-run') {        // This will be executed only when you raise a PR
-//               steps {
-//                 sh "env"   // Just to see tne environment variables as a part of the pipeline
-//                 sh "ansible-playbook robot-dryrun.yml -e ansible_user=${SSH_CRED_USR} -e ansible_password=${SSH_CRED_PSW} -e COMPONENT=${params.COMPONENT} -e ENV=${params.ENV}"
-//             }
-//         }
+  stages {
+      stage('Do a dry-run') {        // This will be executed only when you raise a PR
+              steps {
+                sh "env"   // Just to see tne environment variables as a part of the pipeline
+                sh "ansible-playbook robot-dryrun.yml -e ansible_user=${SSH_CRED_USR} -e ansible_password=${SSH_CRED_PSW} -e COMPONENT=${params.COMPONENT} -e ENV=${params.ENV}"
+            }
+        }
 
-// }
+}
 stage('Tagging') {
             when { branch 'main' }       
             steps {
