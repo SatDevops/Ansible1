@@ -6,7 +6,7 @@ pipeline {
     }
       environment { 
         SSH_CRED = credentials('SSH-Centos7')
-        GIT = credentials('GitHub-Token')
+        GIT = credentials('Github-token')
     }
     stages {
     stage('Lint Checks') {  // This will be executed against the feature branch only
