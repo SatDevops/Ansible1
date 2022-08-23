@@ -18,7 +18,6 @@ pipeline {
     }
 
     }
-    stage{
      stage('Do a dry-run') {        // This will be executed only when you raise a PR
               steps {
                 sh "env"   // Just to see tne environment variables as a part of the pipeline
@@ -36,6 +35,6 @@ stage('Running On Tag') {          // This will run when we push a tag
             }
         }
   }
-}
+
 
 
